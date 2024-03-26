@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    background-color: rgb(189, 224, 255);
+}
+
+main{
+    padding-top: 3.5rem;
+}
+
+.hero {
+    background-image: url('https://img.freepik.com/free-photo/laptop-half-closed-dark-with-colourful-glow-glasses-paper-cup_169016-33951.jpg?t=st=1711440842~exp=1711444442~hmac=96d9e05749a68028578034ec70be85a2afd5d9209dcdfe2d30e3e77337920e65&w=740');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Login Page */
+
+.login__container{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-admin__container{
+    width: 100%;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    margin-block: 2rem;
+}
+.create-blog__form{
+    min-width: 500px;
+}

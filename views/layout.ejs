@@ -1,0 +1,47 @@
+<%- include('partials/header.ejs') %>
+<%- include('partials/nav.ejs') %>
+
+
+<main>
+    <section class="text-white hero">
+        <div class="container px-4 text-center">
+            <h1 class="fw-bolder">Welcome To SFG Blog</h1>
+            <p class="lead">My First Blog Website Attempt Using ExpressJS and EJS</p>
+            <a class="btn btn-lg btn-info text-white" href="#">create a blog</a>
+        </div>
+    </section>
+    <section>
+        <div class="form-admin__container">
+            <form class="create-blog__form mb-4" action="/submit" method="post">
+                <div class="mb-4">
+                    <input class="form-control" type="text" placeholder="Blog title" name="blog-title" />
+                </div>
+                <div class="mb-4">
+                    <textarea class="form-control" name="blog-body" placeholder="Blog body"></textarea>
+                </div>
+                <div class="">
+                    <input type="submit" class="btn btn-primary" value="create post">
+                </div>
+                
+               
+            </form>
+            <% if (locals.title && locals.content) {%>
+                <div class="container">
+                    <div class="row">
+                        <div class="col md-6 bg-light p-4 border rounded">
+                            <h4 class=""><%= title %></h4> 
+                            <p class="lead bg-light text-dark"><%= content %></p>
+                            <a class="btn btn-danger" href="/"><i class="bi bi-trash"></i>Delete</a>
+                            <a class="btn btn-warning" href="/"><i class="bi bi-pencil-square"></i>Edit</a>
+                        </div>
+                    </div>
+                </div> 
+           <% } else { %>
+                <p>No blog created yet</p>
+            <% } %>
+        </div>       
+    </section>
+    <!-- Container End -->
+</main>
+
+<%- include('partials/footer.ejs') %>
