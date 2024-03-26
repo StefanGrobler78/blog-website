@@ -1,0 +1,15 @@
+{
+  "name": "blog-website",
+  "version": "1.0.0",
+  "description": "A capstone project from The Complete 2024 Web Development Bootcamp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stefan Grobler",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.19.2"
+  }
+}
